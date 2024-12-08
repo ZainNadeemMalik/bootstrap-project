@@ -10,38 +10,69 @@
 </head>
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand">Brand</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle Navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link">Features</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link disabled">Disabled</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <header class="container-fluid bg-dark px-0" >
+  <div class="d-flex flex-wrap flex-column flex-md-row align-items-center justify-content-center border-bottom mb-4 py-3">
+
+    <a href="#" class="d-flex align-items-center text-light mb-3 mb-md-0 me-md-auto px-3 text-decoration-none link-body-emphasis">
+      <span class="fs-4">Brand</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a href="#" class="nav-link active">
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          About
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+    
+  </div>
+</header>
 
   
 
   <main class="mt-5">
-    <div class="container text-center">
+
+    <section class="hero d-flex justify-content-center p-3 align-item-center">
+
+      <div class="hero-text">
+        <h1 class="hero-title">Hero Section</h1>
+        <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum, hic ipsa ullam repellat, delectus ducimus quisquam odio nesciunt et eaque. Rem, dolores porro. Eaque aperiam tenetur aliquam. Nam, necessitatibus.</p>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Default</button>
+      </div>
+
+      <div>
+        <img src="premium_photo-1664474619075-644dd191935f.jpg" class="img-thumbnail" alt="hero-image">
+      </div>
+    </section>
+
+
+
+    <section class="pricing container text-center">
+
+      <header class="pricing-header p-3 pb-md-4">
+        <h2 class="display-4 text-body-emphasis">Pricing</h2>
+        <p class="fs-4 text-body-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non iure illo consequatur autem placeat dicta voluptatem sunt, iste ullam, eveniet itaque officiis dolor a vitae culpa totam natus consequuntur architecto.</p>
+      </header>
 
       <div class="row row-cols-1 row-cols-md-3 g-3">
 
-        <div class="col">
+        <article class="col">
           <div class="card px-0 shadow-sm">
-            <div class="card-header">
+            <header class="card-header">
               <h5 class="card-title my-0">Free</h5>
-            </div>
+            </header>
             <div class="card-body">
               <h2 class="card-title pricing-card-title">
                 $0 
@@ -56,14 +87,14 @@
               <button class="btn btn-lg btn-outline-primary w-100">Sign Up</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="col">
+        <article class="col">
           <div class="card px-0 shadow-sm">
 
-            <div class="card-header">
+            <header class="card-header">
               <h5 class="card-title my-0">Pro</h5>
-            </div>
+            </header>
 
             <div class="card-body">
               <h2 class="card-title pricing-card-title">
@@ -79,13 +110,13 @@
               <button class="btn btn-lg btn-primary w-100">Get Started</button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div class="col">
+        <article class="col">
           <div class="card px-0 shadow-sm">
-            <div class="card-header">
+            <header class="card-header">
               <h5 class="card-title my-0">Enterprise</h5>
-            </div>
+            </header>
 
             <div class="card-body">
               <h2 class="card-title pricing-card-title">
@@ -104,10 +135,10 @@
 
             </div>
           </div>
-        </div>
+        </article>
 
       </div>
-    </div>
+    </section>
   </main>
   
 
